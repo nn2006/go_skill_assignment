@@ -9,7 +9,7 @@ You can test the finctionality using following link
 http://52.31.74.51:8081/upload
 
 
-#### Code Walkthrough 
+## Code Walkthrough 
 The server having single endpoint with a GET and POST request implementation. Initially the GET request should display the frontend. A POST request, on the other hand, should trigger the file uploading process.
 ```
 package main
@@ -49,7 +49,7 @@ func main() {
 ```
 The uploadHandler() methord checks if the request is of type is GET or POST and then route  the request to the right method.
 
-##Implementing the file uploading
+## Implementing the file uploading
 Now that you have a basic HTTP server to build on let's continue by implmenting the file uploading functionality. We can do that by getting the file from the POST request we received.
 ```
 func uploadFile(w http.ResponseWriter, r *http.Request) {
@@ -136,7 +136,7 @@ The FieldsFunc function splits the string at each run of Unicode code points sat
 
 
 
-##Frontend
+## Frontend
 Now that the backend is ready, we need a simple frontend to act as a portal for uploading our files. For that, we will create a simple multipart form with and file input and a submit button.
 ```
 <!DOCTYPE html>
@@ -161,7 +161,7 @@ Now that the backend is ready, we need a simple frontend to act as a portal for 
 ```
 The frontend will automatically be served on the /upload endpoint when running the application.
 
-##Testing the application
+## Testing the application
 Awesome, now that we have finished the application, you can run it using the following command.
 ```
 go run main.go
