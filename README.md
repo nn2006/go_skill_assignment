@@ -11,7 +11,7 @@ http://52.31.74.51:8081/upload
 
 #### Code Walkthrough 
 The server having single endpoint with a GET and POST request implementation. Initially the GET request should display the frontend. A POST request, on the other hand, should trigger the file uploading process.
-
+```
 package main
 
 import (
@@ -46,3 +46,4 @@ func main() {
 	//Listen on port 8080
 	http.ListenAndServe(":8080", nil)
 }
+```
