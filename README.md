@@ -150,7 +150,7 @@ Now that the backend is ready, we need a simple frontend to act as a portal for 
   <body>
     <form
       enctype="multipart/form-data"
-      action="http://localhost:8080/upload"
+      action="http://localhost:8081/upload"
       method="post"
     >
       <input type="file" name="myFile" />
